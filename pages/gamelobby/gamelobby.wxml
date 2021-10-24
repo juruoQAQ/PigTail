@@ -1,0 +1,19 @@
+<view>
+    <image class='background' src="/images/mainback.jpg" mode="aspectFill"></image>
+    <view class="userInfo">
+        <image class="avatar" src="/images/zql.jpg" />
+        <text class="userName">小哥</text>
+    </view>
+
+    <view class="container">
+        <view class="localGame" hover-class="small" hover-stay-time="40" bindtap="localGame">
+            <view >双人对战</view>
+        </view>
+        <view class="aiGame" hover-class="small" hover-stay-time="40" bindtap="aiGame">
+            <view>人机对战</view>
+        </view>
+        <view class="onlineGame" hover-class="small" hover-stay-time="40" bindtap="onlineGame">
+            <view >在线对战</view>
+        </view>
+    </view>
+</view>

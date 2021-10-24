@@ -1,0 +1,133 @@
+page{
+    height: 100%;
+}
+.container{
+    padding: 100rpx 0;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1;
+}
+
+.topBar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 180px;
+    margin-top: 0px;
+    
+}
+.createRoom{
+    
+    margin-top: 20px;
+    width: 120px;
+    height: 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: rgba(161, 195, 211, 0.6);
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 15px;
+    color: rgb(22, 22, 22);
+    
+}
+
+.enterRoom{
+    margin-top: 20px;
+    width: 120px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: rgba(161, 195, 211,0.6);
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+    border-radius: 15px;
+    color: rgb(22, 22, 22);
+    
+}
+
+/*按钮的大小*/
+radio .wx-radio-input {
+    width: 25rpx;
+    height: 25rpx;
+    border-radius: 50%;
+    margin: 10px;
+    color: turquoise;
+  }
+  radio .wx-radio-input.wx-radio-input-checked {
+    background-color: #fff!important; 
+    border-color: #419dea!important;
+  }
+   
+  radio .wx-radio-input.wx-radio-input-checked::before {
+   content: ''; 
+   width: 18rpx;
+   height: 18rpx;
+   border-radius: 50%;
+   background-color: #419dea;
+  }
+  
+
+.searchBar{
+    background-color: rgba(53, 162, 182, 0.5); 
+    margin: 25px;
+    height: 35px;
+    border: 4rpx solid #bccace;
+    border-radius: 30rpx;
+}
+
+.roomLab{
+    position: absolute;
+        font-size: 13px;
+        font-weight: bold;
+        background-color:rgba(0,0,0,0);
+        margin: -10px 0 0 10px;
+        padding: 0 5px;
+        color: rgb(22, 22, 24);
+}
+.inputText{
+    flex: block; 
+    float: right; 
+    width: 120px;
+    text-align: right; 
+    margin-right: 22px; 
+    margin-top: 11px; 
+    color: rgb(0, 0, 0); 
+    font-size: 15px ;
+}
+
+.roomList{
+    height: 360px;
+    width: 300px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.roomStyle{
+    height: 80px;
+    width: 120px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.changePage{
+    display: flex;
+    margin: 30px;
+}
+.previousPage{
+    padding: 10px;
+    text-decoration:underline;
+}
+.currentPage{
+    padding: 10px;
+}
+.nextPage{
+    padding: 10px;
+    text-decoration:underline;
+}

@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/gamelobby/gamelobby",
+          "pathName": "pages/gamelobby/gamelobby",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/local/local",
+          "pathName": "pages/local/local",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/gamehall/gamehall",
+          "pathName": "pages/gamehall/gamehall",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/PVP/PVP",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/PVP/PVP",
+          "pathName": "pages/PVP/PVP",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/ai/ai",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/gamelobby/gamelobby",
+          "pathName": "pages/ai/ai",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/ai/ai",
+          "pathName": "pages/ai/ai",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

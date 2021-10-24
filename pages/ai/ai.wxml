@@ -1,0 +1,103 @@
+
+<view class="mainContainer">
+    <view >
+        <view class="playerA">
+            <view class="userInfo">
+                <image class="{{pickPlayerA?'yourTurn':'avatar'}}" src="/images/pig.svg" />
+                <text class="userName">PIG</text>
+            </view>
+            <view class="handCardAreaA">
+                <view class="cardSlot" data-index="Spade" data-player="A" bindtap="clickPlayerCard">
+                    <image src="{{playerASpade}}" mode="aspectFit" class="image"/>
+                </view>
+                <view class="cardSlot" data-index="Heart" data-player="A" bindtap="clickPlayerCard">
+                    <image src="{{playerAHeart}}" mode="aspectFit" class="image"/>
+                </view>
+                <view class="cardSlot" data-index="Club" data-player="A" bindtap="clickPlayerCard">
+                    <image src="{{playerAClub}}" mode="aspectFit" class="image"/>
+                </view>
+                <view class="cardSlot" data-index="Diomond" data-player="A" bindtap="clickPlayerCard">
+                    <image src="{{playerADiomond}}" mode="aspectFit" class="image"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="numA"> 
+            <view class="diomondAnum">{{playerACard.Diomond.length}}
+            </view>
+            <view class="clubAnum">{{playerACard.Club.length}}
+            </view>
+            <view class="heartAnum">{{playerACard.Heart.length}}
+            </view>
+            <view class="spadeAnum">{{playerACard.Spade.length}}
+            </view>   
+        </view>
+
+        <view class="buttonShow" wx:if="{{pickPlayerA==true}}">
+            <view class="{{cardSelected?'cancelButtonA':'disableA'}}"  hover-class="small" hover-stay-time="40" bindtap="clickCancel">取消</view>
+            <view class="{{cardSelected?'confirmButtonA':'disableA'}}"  hover-class="small" hover-stay-time="40" bindtap="clickConfirm">确定</view>       
+        </view>
+        <view class="buttonHide" wx:else></view>
+
+        
+
+    </view>
+    
+
+    <view class="cardArea">
+        <view class="cardPool" bindtap="clickCard">
+            <view class="cardCountsA">剩{{cardpoolturn}}张</view>
+            <image src="{{cardPoolImage}}" mode="aspectFit" class="image"/>
+            <view class="cardCountsB">剩{{cardpoolturn}}张</view>
+        </view>
+        <view class="showArea">
+            <view class="cardCountsA">有{{cardshowedturn}}张</view>
+            <image src="{{showAreaImage}}" mode="aspectFit" class="image"/>
+            <view class="cardCountsB">有{{cardshowedturn}}张</view>
+        </view>
+    </view>
+    
+
+    <view >
+        <view class="buttonShow" wx:if="{{pickPlayerB==true}}">
+            <view class="{{cardSelected?'confirmButtonB':'disableB'}}" hover-class="small" hover-stay-time="40" bindtap="clickConfirm">确定</view>
+            <view class="{{cardSelected?'cancelButtonB':'disableB'}}"  hover-class="small" hover-stay-time="40" bindtap="clickCancel">取消</view>
+        </view>
+        <view class="buttonHide" wx:else></view>
+        
+        
+        <view class="numB"> 
+            <view class="spadeBnum">{{playerBCard.Spade.length}}
+            </view>
+            
+            <view class="heartBnum">{{playerBCard.Heart.length}}
+            </view>
+            <view class="clubBnum">{{playerBCard.Club.length}}
+            </view>
+            <view class="diomondBnum">{{playerBCard.Diomond.length}}
+            </view>
+        </view>
+
+        <view class="playerB">
+            <view class="userInfo">
+                <image class="{{pickPlayerB?'yourTurn':'avatar'}}" src="/images/zql.jpg" />
+                <text class="userName">小哥</text>
+            </view>
+            <view class="handCardAreaB">
+                <view class="cardSlot" data-index="Spade" data-player="B" bindtap="clickPlayerCard">
+                    <image src="{{playerBSpade}}" mode="scaleToFill" class="image"/>
+                </view>
+                <view class="cardSlot" data-index="Heart" data-player="B" bindtap="clickPlayerCard">
+                    <image src="{{playerBHeart}}" mode="aspectFit" class="image"/>
+                </view>
+                <view class="cardSlot" data-index="Club" data-player="B" bindtap="clickPlayerCard">
+                    <image src="{{playerBClub}}" mode="aspectFit" class="image"/>
+                </view>
+                <view class="cardSlot" data-index="Diomond" data-player="B" bindtap="clickPlayerCard">
+                    <image src="{{playerBDiomond}}" mode="aspectFit" class="imageTest"/>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

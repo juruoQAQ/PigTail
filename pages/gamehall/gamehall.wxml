@@ -1,0 +1,40 @@
+<image class='background' src="/images/onlineback.jpg" mode="aspectFill"></image>
+<view class="container">
+    <view class="headline">
+        <image src="/images/gamehall.png" mode="widthFix" class="logo"></image>
+    </view>
+    <view class="topBar">
+        
+        <view >
+            <view class="createRoom" hover-class="small" hover-stay-time="50" bindtap="createRoom">创建对局</view>
+            <radio-group bindchange="bandleChange" name="radio">
+                <radio value="public" checked="{{true}}"> 公开</radio>
+                <radio value="private"> 私有</radio>
+            </radio-group>
+        </view>
+    </view>
+
+    <view class="enterRoom" hover-class="small" hover-stay-time="50" bindtap="createRoom">
+        加入对局
+    </view>
+
+    <view class="searchBar">
+        <label class="roomLab">房间号</label> 
+        <input class="inputText" model:value="{{uuid}}"  placeholder-style="color:#cccccc" /> 
+        
+    </view>
+
+    <view class="roomList" >
+        <view class="roomStyle" wx:for="{{roomList}}" bindtap="joinRoom" data-number="{{index}}">
+            <view >房主：{{item.host_id}}</view>
+            <view >玩家：{{item.client_id}}</view>
+        </view>
+    </view>
+       
+    
+    <view class="changePage">
+        <view class="previousPage" bindtap="clickPreviousPage">上一页</view>
+        <view class="currentPage">{{currentPage}}</view>
+        <view class="nextPage" bindtap="clickNextPage">下一页</view>
+    </view>
+</view>
